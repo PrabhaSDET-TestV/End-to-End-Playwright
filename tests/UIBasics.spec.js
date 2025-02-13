@@ -14,7 +14,7 @@ test("FirstScript", async({browser}) => {
     console.log(await page.title());
 
 });
-test("FirstScript Page", async({page}) => {
+test.only("FirstScript Page", async({page}) => {
     //Automatically done by playwright -> Instance of the new browser created and new page/tab also created
     await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
     await expect(page).toHaveTitle("LoginPage Practise | Rahul Shetty Academy");
